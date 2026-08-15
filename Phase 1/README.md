@@ -37,17 +37,17 @@ The environment includes:
 ### Logical Structure
 
 ```text
-                      Internet
-                            |
-                         Router
-                            |
-                +-----------+-----------+
-                |                       |
-             Switch 1                Switch 2
-                |                       |
-      +---------+---------+     +-------+-------+
-      |         |         |     |       |       |
-     HR1      HR2     Web/DNS  FIN1   FIN2   IT1   IT2
+                           Internet
+                               |
+                            Router
+                               |
+                +-----------------------------+
+                |                              |
+             Switch 1                       Switch 2
+                |                              |
+      +---------+-------+-------+      +-------+-------+------+
+      |         |       |       |      |       |       |      |
+     HR1       HR2     Web     DNS    FIN1   FIN2     IT1    IT2
 ```
 
 *The diagram above represents the logical structure of the network. The actual topology is available in the Packet Tracer file.*
