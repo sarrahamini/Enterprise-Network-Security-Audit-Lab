@@ -37,7 +37,7 @@ The environment includes:
 ### Logical Structure
 
 ```text
-                         Internet
+                      Internet
                             |
                          Router
                             |
@@ -45,15 +45,9 @@ The environment includes:
                 |                       |
              Switch 1                Switch 2
                 |                       |
-          +-----+-----+           +-----+-----+
-          |           |           |           |
-         HR          HR        Finance      Finance
-         PC           PC          PC           PC
-                                   
-                         +----------------+
-                         |                |
-                        IT              Servers
-                        PCs          Web / DNS
+      +---------+---------+     +-------+-------+
+      |         |         |     |       |       |
+     HR1      HR2     Web/DNS  FIN1   FIN2   IT1   IT2
 ```
 
 *The diagram above represents the logical structure of the network. The actual topology is available in the Packet Tracer file.*
@@ -102,3 +96,4 @@ This network serves as the foundation for the next phases of the project, where 
 **Phase 2 — Network Hardening**
 
 The next phase focuses on improving the security of the network by implementing measures such as device password protection, secure configurations, port security, disabling unused ports, and other network-hardening techniques.
+
