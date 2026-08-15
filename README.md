@@ -1,105 +1,50 @@
-# Phase 1 — Network Design & Configuration
+# Enterprise Network Security Audit Lab
 
-## Overview
+## Project Overview
 
-This phase focused on designing and configuring the enterprise network environment for the **Enterprise Network Security Audit Lab** using Cisco Packet Tracer.
+The **Enterprise Network Security Audit Lab** is a hands-on cybersecurity project designed to simulate the process of building, securing, and auditing an enterprise network.
 
-The objective was to create a structured enterprise network that could later be hardened and security-audited using security tools such as Nmap and Wireshark.
+The project was developed using **Cisco Packet Tracer, Nmap, Wireshark, Kali Linux, and Metasploitable 2** to demonstrate practical network security concepts.
 
-## Objectives
+## Project Objectives
 
-* Design an enterprise-style network topology.
-* Configure routers and switches.
-* Connect multiple departmental systems.
-* Configure internal network services.
-* Establish communication between network devices.
-* Create a functional network environment for the later security-audit phases.
+* Design and configure an enterprise network.
+* Implement basic network security and hardening measures.
+* Perform security assessments using industry-standard tools.
+* Analyze network traffic and identify potential security issues.
+* Document findings and provide security recommendations.
 
-## Tools Used
+## Project Phases
 
-* **Cisco Packet Tracer**
+### Phase 1 — Network Design & Configuration
 
-## Network Design
+Designed and configured an enterprise network in **Cisco Packet Tracer**, including routers, switches, departmental workstations, a Web Server, and a DNS Server.
 
-The network was designed with a central router connected to multiple switches representing different parts of the enterprise network.
+**Tools:** Cisco Packet Tracer
 
-The environment includes:
+### Phase 2 — Network Hardening
 
-* **Router**
-* **Switch 1**
-* **Switch 2**
-* **HR workstations**
-* **Finance workstations**
-* **IT workstations**
-* **Web Server**
-* **DNS Server**
+Applied security controls to strengthen the network, including device password protection, encrypted passwords, security banners, port security, and disabling unused ports.
 
-### Logical Structure
+**Tools:** Cisco Packet Tracer
 
-```text
-                         Internet
-                            |
-                         Router
-                            |
-                +-----------+-----------+
-                |                       |
-             Switch 1                Switch 2
-                |                       |
-          +-----+-----+           +-----+-----+
-          |           |           |           |
-         HR          HR        Finance      Finance
-         PC           PC          PC           PC
-                                   
-                         +----------------+
-                         |                |
-                        IT              Servers
-                        PCs          Web / DNS
-```
+### Phase 3 — Network Security Audit
 
-*The diagram above represents the logical structure of the network. The actual topology is available in the Packet Tracer file.*
+Performed a security assessment using **Nmap** and analyzed network traffic with **Wireshark**. A vulnerable **Metasploitable 2** machine was used as the target for security testing.
 
-## Configuration
+**Tools:** Kali Linux, Nmap, Wireshark, Metasploitable 2
 
-During this phase, the network devices were configured to establish connectivity across the enterprise environment.
+## Key Skills Demonstrated
 
-The configuration included:
-
-* Connecting the router and switches.
-* Connecting departmental hosts to the appropriate switches.
-* Assigning IP addressing to network devices and hosts.
-* Configuring the Web Server.
-* Configuring the DNS Server.
-* Establishing network communication between devices.
-* Testing connectivity using appropriate network tests.
-
-## Screenshots
-
-Screenshots documenting the network design and configuration are included in the `Screenshots` folder.
-
-They provide visual evidence of:
-
-* Network topology
-* Device configuration
-* IP addressing
-* Server configuration
-* Connectivity testing
-
-## Project Files
-
-| File/Folder          | Description                                          |
-| -------------------- | ---------------------------------------------------- |
-| `Packet Tracer file` | Complete Phase 1 network topology and configuration  |
-| `Screenshots/`       | Screenshots documenting the design and configuration |
+* Enterprise Network Design
+* Cisco Networking
+* Network Hardening
+* Network Security Auditing
+* Nmap Scanning
+* Wireshark Traffic Analysis
+* Vulnerability Assessment
+* Security Documentation
 
 ## Outcome
 
-At the end of Phase 1, a functional enterprise network environment was established in Cisco Packet Tracer.
-
-This network serves as the foundation for the next phases of the project, where security hardening and network security auditing will be performed.
-
-## Next Phase
-
-**Phase 2 — Network Hardening**
-
-The next phase focuses on improving the security of the network by implementing measures such as device password protection, secure configurations, port security, disabling unused ports, and other network-hardening techniques.
-
+This project demonstrates a practical workflow from **network deployment and hardening to security assessment and traffic analysis**, providing hands-on experience with enterprise network security concepts.
